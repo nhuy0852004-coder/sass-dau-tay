@@ -31,7 +31,6 @@ class Nguoidung extends Authenticatable
     ];
 
     protected $casts = [
-        'matkhau' => 'hashed',
         'ngayxacnhanemail' => 'datetime',
         'ngaytao' => 'datetime',
         'ngaycapnhat' => 'datetime',
@@ -39,7 +38,7 @@ class Nguoidung extends Authenticatable
 
     /**
      * Laravel Auth mặc định tìm cột password.
-     * Dự án dùng cột tiếng Việt là matkhau nên cần khai báo lại.
+     * Dự án dùng cột matkhau nên cần khai báo lại.
      */
     public function getAuthPassword()
     {

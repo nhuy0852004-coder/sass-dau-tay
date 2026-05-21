@@ -18,15 +18,20 @@
 
         <div class="header-admin">
             <div class="admin-avatar">
-                Q
+                {{ strtoupper(mb_substr(auth()->user()->hoten ?? 'Q', 0, 1)) }}
             </div>
 
             <div class="admin-info">
-                <strong>Quản trị viên</strong>
+                <strong>{{ auth()->user()->hoten ?? 'Quản trị viên' }}</strong>
                 <span>Đang hoạt động</span>
             </div>
-
-            <i class="bi bi-chevron-down admin-arrow"></i>
         </div>
+
+        <form method="POST" action="{{ route('admin.dangxuat') }}">
+            @csrf
+            <button type="submit" class="logout-button" title="Đăng xuất">
+                <i class="bi bi-box-arrow-right"></i>
+            </button>
+        </form>
     </div>
 </header>

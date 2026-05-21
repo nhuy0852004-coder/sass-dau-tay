@@ -94,3 +94,71 @@
         width: 100%;
     }
 }
+
+@media (max-width: 900px) {
+    .auth-panel,
+    .auth-panel-wide {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-side {
+        gap: 28px;
+    }
+
+    .auth-intro {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-page {
+        padding: 16px;
+        align-items: flex-start;
+    }
+
+    .auth-side,
+    .auth-form-wrap {
+        padding: 24px;
+    }
+
+    .auth-intro h1 {
+        font-size: 24px;
+    }
+
+    .form-grid,
+    .form-grid-3,
+    .form-grid-auth {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .auth-form-actions .btn-primary,
+    .auth-form-actions .btn-light {
+        width: 100%;
+    }
+
+    .admin-modal,
+    .admin-modal.large,
+    .admin-modal.medium {
+        width: 100%;
+        max-height: calc(100vh - 32px);
+    }
+
+    .modal-backdrop-custom {
+        padding: 16px;
+    }
+
+    .modal-footer-custom {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .modal-footer-custom .btn-primary,
+    .modal-footer-custom .btn-light,
+    .modal-footer-custom .btn-danger {
+        width: 100%;
+    }
+}
