@@ -60,3 +60,17 @@
 .btn-icon:hover {
     background: #f8fafc;
 }
+
+.btn-icon.danger {
+    color: var(--mau-do);
+}
+
+.btn-icon.danger:hover {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+button.is-loading {
+    opacity: 0.75;
+    cursor: not-allowed;
+}

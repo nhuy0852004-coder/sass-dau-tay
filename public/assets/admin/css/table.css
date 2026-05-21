@@ -33,6 +33,10 @@
     background: #f9fafb;
 }
 
+.admin-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
 .table-actions {
     display: flex;
     align-items: center;
@@ -45,5 +49,5 @@
 }
 
 .text-muted {
-    color: var(--mau-chu-phu);
+    color: var(--mau-chu-phu) !important;
 }

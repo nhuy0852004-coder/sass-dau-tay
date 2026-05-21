@@ -17,14 +17,14 @@
             <span>Tổng quan</span>
         </a>
 
-        <a href="#"
-           class="sidebar-link {{ request()->is('admin/danh-muc*') ? 'active' : '' }}">
+        <a href="{{ route('admin.danhmuc.index') }}"
+            class="sidebar-link {{ request()->routeIs('admin.danhmuc.*') ? 'active' : '' }}">
             <i class="bi bi-folder2-open"></i>
             <span>Danh mục</span>
         </a>
 
         <a href="#"
-           class="sidebar-link {{ request()->is('admin/san-pham*') ? 'active' : '' }}">
+           class="sidebar-link">
             <i class="bi bi-box-seam"></i>
             <span>Sản phẩm</span>
         </a>

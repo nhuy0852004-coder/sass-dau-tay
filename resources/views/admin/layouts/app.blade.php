@@ -20,6 +20,18 @@
             @include('admin.layouts.header')
 
             <main class="admin-content">
+                <div class="page-heading">
+                    <div>
+                        <h1>@yield('tieudetrang', 'Tổng quan')</h1>
+                        <p>@yield('mota', 'Theo dõi nhanh tình hình vận hành của hệ thống.')</p>
+                    </div>
+
+                    @hasSection('hanhdong')
+                        <div class="page-heading-actions">
+                            @yield('hanhdong')
+                        </div>
+                    @endif
+                </div>
 
                 @if (session('thanhcong'))
                     <div class="alert-success">
