@@ -20,6 +20,19 @@
             @include('admin.layouts.header')
 
             <main class="admin-content">
+
+                @if (session('thanhcong'))
+                    <div class="alert-success">
+                        {{ session('thanhcong') }}
+                    </div>
+                @endif
+
+                @if (session('loi'))
+                    <div class="alert-danger">
+                        {{ session('loi') }}
+                    </div>
+                @endif
+
                 @yield('noidung')
             </main>
         </div>

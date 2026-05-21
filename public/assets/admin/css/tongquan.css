@@ -1,0 +1,45 @@
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.revenue-list,
+.order-status-list {
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.revenue-item,
+.order-status-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--mau-vien);
+}
+
+.revenue-item:last-child,
+.order-status-item:last-child {
+    border-bottom: 0;
+}
+
+.revenue-item span,
+.order-status-item span {
+    color: var(--mau-chu-phu);
+    font-size: 14px;
+}
+
+.revenue-item strong {
+    font-size: 20px;
+    color: var(--mau-chu);
+}
+
+.order-status-item strong {
+    font-size: 18px;
+    color: var(--mau-chu);
+}

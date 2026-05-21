@@ -162,3 +162,9 @@
         width: 100%;
     }
 }
+
+ @media (max-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
