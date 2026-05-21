@@ -1,0 +1,62 @@
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--mau-chu);
+}
+
+.form-control,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 1px solid var(--mau-vien);
+    background: #ffffff;
+    border-radius: 12px;
+    color: var(--mau-chu);
+    font-size: 14px;
+    outline: none;
+}
+
+.form-control,
+.form-select {
+    height: 42px;
+    padding: 0 12px;
+}
+
+.form-textarea {
+    min-height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: var(--mau-chinh);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.form-error {
+    color: var(--mau-do);
+    font-size: 13px;
+}
+
+.form-help {
+    color: var(--mau-chu-phu);
+    font-size: 13px;
+}

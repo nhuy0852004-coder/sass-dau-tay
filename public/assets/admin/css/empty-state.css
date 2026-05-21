@@ -1,0 +1,28 @@
+.empty-state {
+    padding: 56px 20px;
+    text-align: center;
+}
+
+.empty-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 14px;
+    display: grid;
+    place-items: center;
+    border-radius: 18px;
+    background: #f1f5f9;
+    color: var(--mau-xam);
+    font-size: 28px;
+}
+
+.empty-state h4 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.empty-state p {
+    max-width: 420px;
+    margin: 8px auto 0;
+    color: var(--mau-chu-phu);
+    font-size: 14px;
+}

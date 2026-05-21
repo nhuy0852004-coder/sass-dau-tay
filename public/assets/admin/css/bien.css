@@ -1,0 +1,28 @@
+:root {
+    --mau-nen: #f6f8fb;
+    --mau-sidebar: #0f172a;
+    --mau-sidebar-hover: #1e293b;
+
+    --mau-chinh: #2563eb;
+    --mau-chinh-dam: #1d4ed8;
+
+    --mau-chu: #111827;
+    --mau-chu-phu: #6b7280;
+
+    --mau-vien: #e5e7eb;
+    --mau-trang: #ffffff;
+
+    --mau-xanh: #16a34a;
+    --mau-vang: #f59e0b;
+    --mau-do: #dc2626;
+    --mau-xam: #64748b;
+
+    --sidebar-width: 280px;
+    --sidebar-collapsed-width: 84px;
+    --header-height: 76px;
+
+    --radius-sm: 10px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 18px;
+}
